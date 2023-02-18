@@ -1,0 +1,379 @@
+﻿* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, #dd4c41, #e9b24b);
+}
+.dark-theme{
+    --primary-color: rgb(0 0 0 / 20%);
+    --secondary-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global attribute */
+/* body {
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 10s infinite;
+  -webkit-animation: bg-animation 10s infinite;
+} */
+
+body {
+    background-image: url(../images/studying_student_library.jpg);
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+form {
+    background-color: #ffffff9c;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 6px 6px 18px 5px rgb(0 0 0 / 20%);
+    color: rgba(0, 0, 0, 0.507);
+    font-weight: bold;
+}
+
+    form .title p {
+        margin: 0;
+        padding: 0 0 0 10px;
+        display: block;
+        width: fit-content;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    form .Results label {
+        margin: 0;
+        padding: 0 0 0 10px;
+        display: block;
+        width: fit-content;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: rgb(0, 0, 0, 0.79);
+        width: 200px;
+        word-wrap: break-word;
+    }
+
+    form .double {
+        display: inline-table;
+        justify-content: space-evenly;
+    }
+
+    form .double1 {
+        display: block;
+    }
+
+    form .double2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    form .input_group label {
+        font-size: 15px;
+    }
+
+.input_group input {
+    background-color: #ffffff4d;
+    width: 98%;
+    border-radius: 3px;
+    border: none;
+    padding: 20px;
+    outline: none;
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.507);
+}
+
+::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.507);
+    text-transform: capitalize;
+}
+
+.box {
+    background-image: url(../images/maxresdefault.jpg);
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    background-position: 50% 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    animation: transition 5s infinite ease-in-out;
+    -webkit-animation: transition 8s infinite ease-in-out;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1199px) {
+    .box {
+        display: none;
+    }
+}
+
+.input_group select {
+    background-color: #ffffff4d;
+    width: 98%;
+    border-radius: 3px;
+    border: none;
+    padding: 20px;
+    outline: none;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.507);
+    text-transform: capitalize;
+}
+
+    .input_group select:focus-within {
+        color: black;
+    }
+
+.button_group {
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    color: white;
+    width: 50%;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+    border: 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+    .button_group:hover {
+        background-position: right;
+    }
+
+    .button_group:focus {
+        width: 60%;
+        background-position: right;
+    }
+
+/* button:hover {
+  background-position: right;
+} */
+
+/* start animation */
+@keyframes transition {
+    0% {
+        border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -webkit-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -moz-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -ms-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -o-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+    }
+
+    50% {
+        border-radius: 15% 85% 19% 81% / 80% 11% 89% 20%;
+        -webkit-border-radius: 15% 85% 19% 81% / 80% 11% 89% 20%;
+        -moz-border-radius: 15% 85% 19% 81% / 80% 11% 89% 20%;
+        -ms-border-radius: 15% 85% 19% 81% / 80% 11% 89% 20%;
+        -o-border-radius: 15% 85% 19% 81% / 80% 11% 89% 20%;
+    }
+
+    60% {
+        border-radius: 47% 53% 61% 39% / 80% 11% 89% 20%;
+        -webkit-border-radius: 47% 53% 61% 39% / 80% 11% 89% 20%;
+        -moz-border-radius: 47% 53% 61% 39% / 80% 11% 89% 20%;
+        -ms-border-radius: 47% 53% 61% 39% / 80% 11% 89% 20%;
+        -o-border-radius: 47% 53% 61% 39% / 80% 11% 89% 20%;
+    }
+
+    80% {
+        border-radius: 30% 70% 19% 81% / 53% 31% 69% 47%;
+        -webkit-border-radius: 30% 70% 19% 81% / 53% 31% 69% 47%;
+        -moz-border-radius: 30% 70% 19% 81% / 53% 31% 69% 47%;
+        -ms-border-radius: 30% 70% 19% 81% / 53% 31% 69% 47%;
+        -o-border-radius: 30% 70% 19% 81% / 53% 31% 69% 47%;
+    }
+
+    100% {
+        border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -webkit-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -moz-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -ms-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+        -o-border-radius: 30% 70% 50% 50% / 30% 31% 69% 70%;
+    }
+}
+
+
+#ytLink {
+    font-size: 16px;
+}
+
+#fbLink {
+    font-size: 16px;
+}
+
+#twLink {
+    font-size: 16px;
+}
+
+#ytLink:hover {
+    color: red;
+    font-size: 19px;
+}
+
+#fbLink:hover {
+    color: dodgerblue;
+    font-size: 19px;
+}
+
+#twLink:hover {
+    color: deepskyblue;
+    font-size: 19px;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+    ul li {
+        position: relative;
+        list-style: none;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 15px 15px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+
+        ul li .fa {
+            font-size: 3em;
+            -webkit-text-stroke: 2px var(--clr);
+            color: transparent;
+        }
+
+        ul li::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            border-bottom: 4px solid #808080;
+            transition: 0.5s ease-in-out;
+            font-family: fontAwesome;
+            text-align: center;
+            line-height: 120px;
+            font-size: 3em;
+            color: var(--clr);
+        }
+
+        ul li:hover::before {
+            height: 100%;
+        }
+
+        ul li:nth-child(1):before {
+            content: '\f099';
+        }
+
+        ul li:nth-child(2):before {
+            content: '\f16d';
+        }
+
+        ul li:nth-child(3):before {
+            content: '\f09a';
+        }
+
+        ul li:nth-child(4):before {
+            content: '\f16a';
+        }
+
+        ul li:nth-child(5):before {
+            content: '\f232';
+        }
+
+        ul li:nth-child(6):before {
+            content: '\f0e1';
+        }
+
+

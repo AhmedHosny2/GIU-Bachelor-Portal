@@ -1,0 +1,180 @@
+﻿* {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Bookswall.jpg);
+}
+
+.error {
+    color: #e40808;
+}
+
+h3 {
+    color: lightgrey;
+}
+
+.WraP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+    .WraP form {
+        background-color: #eeee;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 627px;
+    }
+
+        .WraP form h2 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+
+    .WraP form {
+       
+    top: 1036px;
+    left: 16px;
+    margin-right: 2px;
+}
+
+        .WraP form input {
+            padding: 0.35em 0.45em;
+            border: 1px solid transparent;
+            transition: background-color 0.3s ease-in-out;
+            height: 60px;
+            width: 100%;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+
+    .WraP .f :focus {
+        outline: none;
+    }
+
+    .WraP .f ::placeholder {
+        color: black;
+    }
+
+    .WraP .f span {
+        position: absolute;
+        background-color: #fc2f70;
+        transform-origin: center;
+        transition: transform 0.5s ease;
+    }
+
+    .WraP .f .bottom,
+    .WraP .f .top {
+        height: 1px;
+        left: 0;
+        right: 0;
+        transform: scaleX(0);
+    }
+
+    .WraP .f .left,
+    .WraP .f .right {
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        transform: scaleY(0);
+    }
+
+    .WraP .f .top {
+        top: 0;
+    }
+
+    .WraP .f .bottom {
+        bottom: 0;
+    }
+
+    .WraP .f .left {
+        left: 0;
+    }
+
+    .WraP .f .right {
+        right: 0;
+    }
+
+    .WraP .f:focus ~ .top,
+    .WraP .f:focus ~ .bottom {
+        transform: scaleX(1);
+    }
+
+    .WraP .f:focus ~ .left,
+    .WraP .f:focus ~ .right {
+        transform: scaleY(1);
+    }
+
+    .WraP form .buttonG {
+        border-style: none;
+        border-color: inherit;
+        border-width: 0;
+        color: white;
+        background-color: #c4161c;
+        padding: 10px;
+        width: 30%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        text-transform: capitalize;
+        cursor: pointer;
+        position: center;
+        height: 45px;
+        top: 52px;
+        left: -8px;
+    }
+
+        .WraP form .buttonG:hover {
+            cursor: pointer;
+            animation: jelly 0.5s;
+        }
+
+        .WraP form .buttonG:not(:last-child) {
+            margin-bottom: 10px;
+        }
+       
+
+/* animation */
+@keyframes jelly {
+
+    0%, 100% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
